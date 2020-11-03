@@ -1,0 +1,56 @@
+@font-face {
+    font-family: EnglishLogoFont;
+    src: url('/fonts/bangla-mn-regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: ArabicLogoFont;
+    src: url('/fonts/ge-hili-book.otf');
+}
+
+@font-face {
+    font-family: ArabicText;
+    src: url('/fonts/Adobe-Arabic-Regular.otf');
+}
+
+$arddGray: #42505C;
+
+.navbar {
+    height: 90px;
+    display: grid;
+    grid-template:
+        "logo tabs options" / max-content auto min-content;
+    .logo {
+        grid-area: logo;
+        display: flex;
+        p {
+            margin: 0;
+            color: $arddGray;
+        }
+        .logo-font{
+            font-family: 'EnglishLogoFont';
+            font-size: 1.3rem;
+            line-height: 1.2;
+        }
+        .arabic-logo-font{
+            font-family: 'ArabicLogoFont';
+            font-size: 21px;
+            line-height: 1.2;
+        }
+        .arabic-spacing-title{
+            letter-spacing: 1px;
+        }
+    }
+    .tabs {
+        grid-area: tabs;
+        display: flex;
+    }
+    .options {
+        grid-area: options;
+        display: flex;
+        .arabic-translation-word {
+            font-family: ArabicText;
+            font-size: 1.8rem;
+        }
+    }
+}
