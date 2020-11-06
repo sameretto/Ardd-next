@@ -1,11 +1,13 @@
-export const enNavbarTranslations = {
+export const EN_NAVBAR = {
     titleText1: 'Arab Renaissance for',
     titleText2: 'Democracy & Development',
     navParentItem1: {
         title: 'About',
-        overViewHeader: 'About Us',
-        overViewHeaderRoute: '/About-Us',
         dropDownItems: [
+            {
+                title: 'About Us',
+                route: '/About-Us'
+            },
             {
                 title: 'Coalitions',
                 route: '/About-Us/Coalitions'
@@ -22,9 +24,11 @@ export const enNavbarTranslations = {
     },
     navParentItem2: {
         title: 'What We Do',
-        overViewHeader: 'Our Work',
-        overViewHeaderRoute: 'What-We-Do',
         dropDownItems: [
+            {
+                title: 'Our Work',
+                route: 'What-We-Do'
+            },
             {
                 title: 'Programs',
                 route: 'What-We-Do/Program-List'
@@ -53,9 +57,11 @@ export const enNavbarTranslations = {
     },
     navParentItem4: {
         title: 'Media Room',
-        overViewHeader: 'News Room',
-        overViewHeaderRoute: 'News-Room',
         dropDownItems: [
+            {
+                title: 'News Room',
+                route: 'News-Room'
+            },
             {
                 title: 'Blogs',
                 route: 'Blogs'
@@ -68,14 +74,20 @@ export const enNavbarTranslations = {
     },
     navParentItem5: {
         title: 'Resources',
-        overViewHeader: 'Publications',
-        overViewHeaderRoute: 'Publications',
+        dropDownItems: [
+            {
+                title: 'Publications',
+                route: 'Publications'
+            },
+        ]
     },
     navParentItem6: {
         title: 'Explore',
-        overViewHeader: 'Get Involved',
-        overViewHeaderRoute: 'Get-Involved',
         dropDownItems: [
+            {
+                title: 'Get Involved',
+                route: 'Get-Involved'
+            },
             {
                 title: 'Careers',
                 route: 'Get-Involved/Careers'
@@ -92,14 +104,16 @@ export const enNavbarTranslations = {
     },
 }
 
-export const arNavbarTranslations = {
+export const AR_NAVBAR = {
     titleText1: 'النهضة العربية',
     titleText2: 'للديمقراطية والتنمية',
     navParentItem1: {
         title: 'من نحن',
-        overViewHeader: 'منظمة النهضة (أرض)',
-        overViewHeaderRoute: '/About-Us',
         dropDownItems: [
+            {
+                title: 'منظمة النهضة (أرض)',
+                route: '/About-Us'
+            },
             {
                 title: 'تحالفاتنا',
                 route: '/About-Us/Coalitions'
@@ -116,9 +130,11 @@ export const arNavbarTranslations = {
     },
     navParentItem2: {
         title: 'عملنا',
-        overViewHeader: 'نظرة عامة',
-        overViewHeaderRoute: 'What-We-Do',
         dropDownItems: [
+            {
+                title: 'نظرة عامة',
+                route: 'What-We-Do'
+            },
             {
                 title: 'البرامج',
                 route: 'What-We-Do/Program-List'
@@ -147,9 +163,11 @@ export const arNavbarTranslations = {
     },
     navParentItem4: {
         title: 'الغرفة الإعلامية',
-        overViewHeader: 'أخبارنا',
-        overViewHeaderRoute: 'News-Room',
         dropDownItems: [
+            {
+                title: 'أخبارنا',
+                route: 'News-Room'
+            },
             {
                 title: 'المدونة',
                 route: 'Blogs'
@@ -162,14 +180,20 @@ export const arNavbarTranslations = {
     },
     navParentItem5: {
         title: 'الموارد',
-        overViewHeader: 'المنشورات',
-        overViewHeaderRoute: 'Publications',
+        dropDownItems: [
+            {
+                title: 'المنشورات',
+                route: 'Publications'
+            },
+        ]
     },
     navParentItem6: {
         title: 'اكتشف',
-        overViewHeader: 'انضم لنا',
-        overViewHeaderRoute: 'Get-Involved',
         dropDownItems: [
+            {
+                title: 'انضم لنا',
+                route: 'Get-Involved'
+            },
             {
                 title: 'الوظائف',
                 route: 'Get-Involved/Careers'

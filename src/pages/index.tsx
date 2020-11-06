@@ -6,6 +6,7 @@ import timeStampCasting from '../core/utils/timestamp-casting.util';
 
 export async function getServerSideProps(context: GetServerSidePropsContext) {
     const page = `homePage-${context.locale}`;
+    console.log(page);
     const data = timeStampCasting((await admin.firestore().collection(PAGES_COLLECTIONS).doc(page).get()).data() as HomePage);
     return {
         props: { data }
@@ -13,7 +14,6 @@ export async function getServerSideProps(context: GetServerSidePropsContext) {
 }
 
 export default function home(props: InferGetServerSidePropsType<typeof getServerSideProps>) {
-    console.log(props.data?.videos);
     const content = props.data;
     return (<div className=""></div>)
 }
