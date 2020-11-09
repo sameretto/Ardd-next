@@ -1,7 +1,12 @@
 @import './bootstrap-spacing.scss';
 
-$arrdRed: #BF1E2E;
-$arddGray: #42505C;
+$arrdRed: #bf1e2e;
+$arddGray: #42505c;
+
+@font-face {
+  font-family: ArabicText;
+  src: url('/fonts/Adobe-Arabic-Regular.otf');
+}
 
 // html,
 // body,
@@ -21,21 +26,36 @@ $arddGray: #42505C;
 //     background-color: rebeccapurple;
 // }
 
-html,
+:lang(en) html,
 body,
-div#__next{
+div#__next {
+  margin: 0;
+}
+
+:lang(ar) {
+  html,
+  body,
+  div#__next {
     margin: 0;
+    direction: rtl;
+    text-align: right;
+    padding-inline-start: 0;
+    margin-right: 0;
+    font-family: ArabicText;
+    font-style: normal;
+    font-weight: 400;
+    font-size: x-large;
+  }
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .ardd-red {
-    color: $arrdRed;
+  color: $arrdRed;
 }
 
 .ardd-gray {
-    color: $arddGray;
+  color: $arddGray;
 }
-

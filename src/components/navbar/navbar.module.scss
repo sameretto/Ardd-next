@@ -32,14 +32,15 @@ $arddGray: #42505c;
       margin: 0;
       color: $arddGray;
     }
-    .logo-font {
+    :lang(en) .logo-font {
       font-family: 'EnglishLogoFont';
       font-size: 1.3rem;
       line-height: 1.2;
     }
-    .arabic-logo-font {
+    :lang(ar) .logo-font {
       font-family: 'ArabicLogoFont';
       font-size: 21px;
+      letter-spacing: 1px;
       line-height: 1.2;
     }
     .arabic-spacing-title {
@@ -50,6 +51,7 @@ $arddGray: #42505c;
     grid-area: tabs;
     display: flex;
     margin: auto;
+
     > * {
       font-size: larger;
       color: $arddGray;
@@ -59,6 +61,7 @@ $arddGray: #42505c;
       margin-bottom: auto;
     }
     button {
+      display: flex;
       outline: none;
       padding: 0;
       border: 0;
@@ -66,6 +69,10 @@ $arddGray: #42505c;
       font-size: 100%;
       color: inherit;
       background-color: transparent;
+      > span > svg {
+        display: block;
+        margin: auto;
+      }
     }
   }
   .options {
