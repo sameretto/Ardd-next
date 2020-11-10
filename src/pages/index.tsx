@@ -14,7 +14,6 @@ export async function getServerSideProps(context: GetServerSidePropsContext) {
 }
 
 export default function home(props: InferGetServerSidePropsType<typeof getServerSideProps>) {
-    const content = props.data;
     return (<Link href="/about"><a className="">About</a></Link>)
 }
 

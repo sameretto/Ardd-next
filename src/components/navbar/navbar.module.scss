@@ -1,3 +1,5 @@
+@import '/public/variables.scss';
+
 @font-face {
   font-family: EnglishLogoFont;
   src: url('/fonts/bangla-mn-regular.ttf') format('truetype');
@@ -12,8 +14,6 @@
   font-family: ArabicText;
   src: url('/fonts/Adobe-Arabic-Regular.otf');
 }
-
-$arddGray: #42505c;
 
 .navbar {
   height: 90px;
