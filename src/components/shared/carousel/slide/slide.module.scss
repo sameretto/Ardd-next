@@ -1,0 +1,30 @@
+.slide {
+  display: none;
+  text-align: center;
+}
+.active {
+  display: block;
+  height: 23vw;
+  width: 100%;
+}
+
+.image {
+  height: inherit;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.text {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+.slider-items {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+}

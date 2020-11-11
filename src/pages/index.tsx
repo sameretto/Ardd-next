@@ -1,5 +1,5 @@
 import { GetServerSidePropsContext, InferGetServerSidePropsType } from 'next';
-import Link from 'next/link';
+import Slider from '../components/shared/carousel/slider.component';
 import { PAGES_COLLECTIONS } from '../core/constants/articles.const';
 import { HomePage } from '../core/models/home-page.model';
 import admin from '../core/utils/firebase-admin.util';
@@ -14,6 +14,6 @@ export async function getServerSideProps(context: GetServerSidePropsContext) {
 }
 
 export default function home(props: InferGetServerSidePropsType<typeof getServerSideProps>) {
-    return (<Link href="/about"><a className="">About</a></Link>)
+    return (<Slider carousel={props.data?.carousel!}></Slider>)
 }
 
