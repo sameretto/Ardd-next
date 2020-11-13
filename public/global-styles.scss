@@ -28,6 +28,13 @@
 body,
 div#__next {
   margin: 0;
+  
+}
+@media screen and (max-width: 320px) {
+  body {
+      min-width: 320px;
+  }
+
 }
 
 :lang(ar) {

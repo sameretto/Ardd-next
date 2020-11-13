@@ -11,7 +11,7 @@ type Props = {
 
 export default function Slider({ carousel }: Props) {
   const [slider, setSlider] = useState({ activeIndex: 0, length: carousel?.length });
-
+  setTimeout(goToNextSlide, 5000);
   function goToPrevSlide(): void {
     let index = slider.activeIndex;
     let length = slider.length;
@@ -41,11 +41,9 @@ export default function Slider({ carousel }: Props) {
 
   return (
     <div className={style.slider}>
-      <div className={style['slider-items']}>
-        <LeftArrow goToPrevSlide={goToPrevSlide} />
-        <Slide slides={carousel} activeIndex={slider.activeIndex} />
-        <RightArrow goToNextSlide={goToNextSlide} />
-      </div>
+      <LeftArrow goToPrevSlide={goToPrevSlide} />
+      <Slide slides={carousel} activeIndex={slider.activeIndex} />
+      <RightArrow goToNextSlide={goToNextSlide} />
     </div>
   );
 }

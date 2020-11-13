@@ -7,15 +7,15 @@ type Props = {
 };
 
 export default function Slide({ slides, activeIndex }: Props) {
-  console.log(slides);
-
-  return (<>
+  return (
+    <>
       {slides.map((s, index) => (
-        <div className={index === activeIndex ? style.active : style.slide} key={index}>
-          <div style={{backgroundImage: `url(${s.image})`}} className={style.image}></div>
-          <div className={style.text}>{s.text}</div>
+        <div className={(index === activeIndex ? style.active : style.slide)} key={index}>
+          <div style={{ backgroundImage: `url(${s.image})` }} className={style.image}>
+            <h2 className={style.text + ' p-4'}>{s.text}</h2>
+          </div>
         </div>
       ))}
-      </>
+    </>
   );
 }

@@ -46,6 +46,11 @@
     .arabic-spacing-title {
       letter-spacing: 1px;
     }
+    @media screen and (max-width: 475px) {
+      .logo-font {
+        font-size: .7rem !important;
+      }
+    }
   }
   .tabs {
     grid-area: tabs;
@@ -73,6 +78,9 @@
         display: block;
         margin: auto;
       }
+    }
+    @media screen and (max-width: 1200px) {
+      display: none;
     }
   }
   .options {
